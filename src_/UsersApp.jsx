@@ -7,7 +7,6 @@ import { UserRoutes } from './routes/UserRoutes';
 export const UsersApp = () => {
 
     const { login } = useContext(AuthContext);
-
     return (
         <Routes>
             {

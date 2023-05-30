@@ -18,7 +18,7 @@ export const UsersPage = () => {
     useEffect(() => {
         getUsers();
     }, []);
-    
+
     return (
         <>
 
@@ -27,7 +27,7 @@ export const UsersPage = () => {
             <div className="container my-4">
                 <h2>Users App</h2>
                 <div className="row">
-                    <div className="col">
+                <div className="col">
                         {(visibleForm || !login.isAdmin) || <button
                             className="btn btn-primary my-2"
                             onClick={handlerOpenForm}>

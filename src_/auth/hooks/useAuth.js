@@ -19,7 +19,7 @@ export const useAuth = () => {
         try {
             const response = await loginUser({ username, password });
             const token = response.data.token;
-            const claims = JSON.parse(window.atob(token.split(".")[1]));
+            const claims = JSON.parse(window.atob(token.split(".")[1]));//Agarra el payload [1], como esta en base64,decodifica
             console.log(claims);
             const user = { username: claims.sub }
             dispatch({

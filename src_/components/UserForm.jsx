@@ -7,6 +7,7 @@ export const UserForm = ({ userSelected, handlerCloseForm }) => {
     const { initialUserForm, handlerAddUser, errors } = useContext(UserContext);
     
     const [userForm, setUserForm] = useState(initialUserForm);
+    console.log(userForm.admin);
     const [checked, setChecked] = useState(userForm.admin);
     const { id, username, password, email, admin } = userForm;
 

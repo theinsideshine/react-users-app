@@ -10,7 +10,7 @@ export const UsersList = () => {
     return (
         <table className="table table-hover table-striped">
 
-            <thead>
+<thead>
                 <tr>
                     <th>#</th>
                     <th>username</th>
@@ -24,14 +24,12 @@ export const UsersList = () => {
             </thead>
             <tbody>
                 {
-                    users.map(({ id, username, email, admin }) => (
+                    users.map(({id, username, email }) => (
                         <UserRow
                             key={id}
                             id={id}
                             username={username}
-                            email={email}
-                            admin={admin}
-                        />
+                            email={email} />
                     ))
                 }
             </tbody>
