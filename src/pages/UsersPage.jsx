@@ -1,24 +1,35 @@
-import { useContext, useEffect } from "react";
+import { useEffect } from "react";
 import { UserModalForm } from "../components/UserModalForm";
 import { UsersList } from "../components/UsersList";
-import { UserContext } from "../context/UserContext";
-import { AuthContext } from "../auth/context/AuthContext";
+import { useUsers } from "../hooks/useUsers";
+import { useAuth } from "../auth/hooks/useAuth";
 
 export const UsersPage = () => {
 
     const {
         users,
         visibleForm,
+        isLoading,
         handlerOpenForm,
         getUsers,
-    } = useContext(UserContext);
+    } = useUsers();
 
-    const { login } = useContext(AuthContext);
+    const { login } = useAuth();
 
     useEffect(() => {
         getUsers();
     }, []);
     
+    if (isLoading) {
+        return (
+            <div className="container my-4">
+                {/* <h4>Cargando ...</h4> */}
+                <div className="spinner-border text-info" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        );
+    }
     return (
         <>
 
