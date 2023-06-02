@@ -22,7 +22,7 @@ Deploy UsersApp
 
 Quick guide deploy in aws s3
 
-[deploy S2](doc/deploy-react.pdf)
+[deploy S3](doc/deploy-react.pdf)
 
 
 BackEnd repository: https://github.com/theinsideshine/backend-SpringSecurity-users-app 
