@@ -10,7 +10,7 @@ LoginPage
 
 
 CrudUserPage
-![](images/crud-user.png.png)
+![](images/crud-user.png)
 
 
 
