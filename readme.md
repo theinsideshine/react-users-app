@@ -20,5 +20,8 @@ Deploy UsersApp
 [![Deploy UsersApp](images/video-deploy.png)](https://www.youtube.com/watch?v=xNm_gpNkJ2o)
 
 
+Quick guide deploy in aws s2
+![](doc/deploy-react.pdf)
+
 BackEnd repository: https://github.com/theinsideshine/backend-SpringSecurity-users-app 
 
