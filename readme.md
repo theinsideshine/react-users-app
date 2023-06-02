@@ -21,7 +21,6 @@ Deploy UsersApp
 
 
 Quick guide deploy in aws s3
-
 [deploy S3](doc/deploy-react.pdf)
 
 
