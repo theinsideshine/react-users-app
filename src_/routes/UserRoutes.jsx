@@ -11,7 +11,6 @@ export const UserRoutes = () => {
             <Navbar />
             <Routes>
                 <Route path="users" element={<UsersPage />} />
-                <Route path="users/page/:page" element={<UsersPage />} />
 
                 {!isAdmin || <>
                     <Route path="users/register" element={<RegisterPage />} />
